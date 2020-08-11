@@ -1,0 +1,39 @@
+@media (min-width:320px)and (max-width:568px){
+.carousel-inner img{
+    margin:0 auto;
+    min-height:300px;
+    min-width:300px;
+  }
+  .descargar button{
+    position: relative;
+    top:2em;
+    margin-left:5px;
+  }
+  .descargar{
+  position: relative;
+  top:30em;
+  }
+  nav a{
+    margin-left:4px;
+    font-size:1em;
+    }
+    .info img{
+        position: relative;
+        top:4em;
+        }
+        #nes{
+         position: relative;
+         top:-2em;
+         width:200px;
+         height:200px;
+        }
+        .container p{  
+            width:300px;
+            height:100px;
+            font-size:12px;
+            }
+            .logo img{
+            max-width:150px;
+            max-height:150px;
+            }
+    }

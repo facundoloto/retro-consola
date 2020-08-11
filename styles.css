@@ -1,0 +1,95 @@
+@font-face{
+font-family:retro;
+src: url(PAC-FONT.TTF);
+}
+@font-face{
+font-family:nintendo;
+src:url(pretendo.ttf);
+}
+/*.background::after {
+    content: "";
+    background: url("image/tumblr_percpqu0nz1t7b5qro1_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height:100vh;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+
+*/
+
+.container{
+width:100vw;
+height:100vh;
+}
+.color{
+color: rgb(255, 255, 0,.7);
+}
+.logo,.info{
+position: relative;
+top:6em;
+}
+#logo{
+position: relative;
+top:-40px;
+width:500px;
+height:200px;
+}
+.container img{
+display:block;
+margin:0 auto;
+}
+
+nav a,.container{
+font-family: retro;
+text-decoration: none;
+color:rgba(0, 0, 0, 0.9);
+}
+nav a::before{
+content: " ";
+background: url("image/pngocean.com.png");
+background-size: cover;
+display:inline-block;
+width:30px;
+height:30px;
+position:relative;
+top:7px;
+right:3px;
+}
+nav a:hover{
+    color: rgb(255, 255, 0,.7);
+    transition:.5s;    
+}
+nav a:hover::before{
+animation-name: rotate;
+animation-duration:.5s;
+}
+
+nav img{
+width:60px;
+height:60px;
+}
+.logo{
+/*position: relative;
+top:20%;*/
+}
+.container h1{
+font-family: retro;
+font-size:4em;
+margin-bottom:20px;
+}
+@keyframes rotate{
+0%{
+-webkit-transform: rotate(0deg);    
+}
+100%{
+   -webkit-transform: rotate(360deg); 
+}
+
+}
