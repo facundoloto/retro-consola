@@ -1,104 +1,213 @@
+*{
+   box-sizing: border-box;
+   margin:0;
+   padding:0;
+}
 @font-face{
-    font-family:retro;
-    src: url(PressStart2P-Regular.ttf);
-    }
-    @font-face{
-    font-family:nintendo;
-    src: url(Pretendo.ttf);
-    }
+font-family:retro;
+src:url("PLOK____.ttf") ;
+}
+ body{
+ background-color:#f1f1f1;
+ }
+ .header{
+   position: fixed;
+   top: 0;
+   right: 0;
+   left: 0;
+   z-index: 1030;
+   }
+   .banner{
+      background-image: url("image/tumblr_percpqu0nz1t7b5qro1_1280.jpg");
+      background-size:contain;
+      
+      }
+      .banner img{
+      display:block;
+      margin:0 auto ;
+      max-width:25%;
+      max-height:150px;
+      }
+      nav a{
+      font-family:retro;
+      font-size:.9em;
+      }
+      .navbar{
+      background-color:orangered;
+      max-width:100vw;
+      }
+      .navbar-nav li a:hover{
+      color:rgb(0, 255, 42)  !important; /*esta regla se aplica !important por que el hover en bootstrap en nav no dejaba aplicar estilo de color de texto*/
+      }
+      
+      nav img{
+      width:40px;
+      height:40px;
+      }
+#luz {
+background:none;
+border: none;
+position:fixed;
+outline: none; /*elimina el borde del boton cuando se presiona*/
+bottom:10px;
+right:0;
+z-index: 1030;
+}
+#luz img{
+width: 30px;
+height:30px;
+}
+#mediafire{
+   width: 200px;
+   height:200px;
+}
 
-  nav a{
-    color: white;
-  }
-    p{
-    font-family:retro;
-    color:black;
+.container{
+   position: relative;
+   top:30vh;
+   left:-5em;
+   display: flex;
+   flex-direction: row;
+   justify-content:start;
+   float:right;
+   
+   }
+.principal{
+   background-color:rgba(255, 255, 255);
+border-radius:6px;
+border:1.2px solid rgba(0, 0, 0, 0.2);
+}
+.history{
+   width:55vw;
+   margin-left: 2em;
+   margin-top:5em;
+   }
+   .redes p{
+      font-size:14px;
+      }
+      
+.redes .row img{
+width:30px;
+height:30px;
+}
+.history h1{
+   font-family: 'Roboto Slab', sans-serif;
+   font-size: 3em;
+   line-height: 120%;
+   font-weight: 700;
+   color: #2B3542;
+   word-break: break-word;
+   }
+   .history img{
+   margin-top:2em;
+   margin-bottom:2em;
+   width:500px;
+   height:300px;
+   }
+   .history p{
+   font-family: 'Alata', sans-serif;
+   font-size: 1em;
+   line-height: 30px;
+   width:40vw;
+   }
+   
+
+
+.aside{
+   border-radius:6px;
+ border:1.2px solid rgba(0, 0, 0, 0.2);
+   margin-left:5em;
+   height:80vh;
+   background-color:rgba(255, 255, 255);
+   
+}
+.aside h4{
+font-size:1.1em;
+}
+.aside ul li {
+list-style:none;
+margin-bottom:1.2em;
+padding:5px;
+
+}
+.aside ul li a{
+font-family: 'Alata', sans-serif; 
+font-size:12px;
+color:#6c757d;;
+}
+.aside ul li a:hover{
+
+color:rgb(0, 255, 42);
+}
+.aside ul li::before{
+content: " ";
+background: url("image/index/palanca-de-mando.png");
+background-size:cover;
+display:inline-block;
+width:22px;
+height:22px;
+position:relative;
+top:6px;
+right:3px;
+}
+
+.compartir img{
+width:50px;
+height:50px;
+}
+
+.carousel-item img{
+   display:block;
+   
+   max-height:300px ;
+   max-width:300px ;
+   }
+.download{
+font-family: 'Alata', sans-serif;
+display: flex;
+flex-direction: row;
+justify-self:center;
+justify-content:start;
+
+
+}
+footer {
+margin-top:200px;
+text-align: center;
+background-size:cover;
+font-family:retro;
+font-size:18px;
+max-width:100vw;
+height:60px;
+color:black;
+}
+
+.top-game{
+
+   counter-reset:chapter;
     }
-  
-  /*.background::after {
-    content: "";
-    background: url("image/juegos-retro.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.7;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;   
-  }*/
-    .container{
-    width:100vw;
-    height:100vh;
-    }
-    .color{
-    color: rgb(255, 255, 0,.7);
-    }
-    .logo,.info{
-    position: relative;
-    top:6em;
-    }
-    #logo{
-    position: relative;
-    top:-40px;
-    width:500px;
-    height:200px;
-    }
-    .container img{
-    display:block;
-    margin:0 auto;
-    }
+.top-game iframe{
+margin-top:2em;
+margin-bottom:2em;
+}
+   .chapter{
+       
+    counter-increment:chapter;
+   }
+      
+      .chapter::before{
+     content: counter(chapter)"-";
+   
+      }
+
+@keyframes rotate{
+0%{
+-webkit-transform: rotate(0deg);    
+}
+50%{-webkit-transform: rotate(360deg); }
+100%{
+-webkit-transform: rotate(360deg);   
+}
     
-    nav a,.container{
-    font-family:nintendo;
-    text-decoration: none;
-    color:rgba(255, 255, 255, 0.9);
-    }
-    nav a::before{
-    content: " ";
-    background: url("image/pngocean.com.png");
-    background-size: cover;
-    display:inline-block;
-    width:30px;
-    height:30px;
-    position:relative;
-    top:7px;
-    right:3px;
-    }
-    nav a:hover{
-        color: rgb(255, 255, 0,.7);
-        transition:.5s;    
-    }
-    nav a:hover::before{
-    animation-name: rotate;
-    animation-duration:.5s;
-    }
-    
-    nav img{
-    width:60px;
-    height:60px;
-    }
-    .logo{
-    /*position: relative;
-    top:20%;*/
-    }
-    .container h1{
-    font-family: retro;
-    font-size:4em;
-    margin-bottom:20px;
-    }
-    .carousel-inner img{
-    max-width:300px;
-    max-height:300px;
-    }
-    @keyframes rotate{
-    0%{
-    -webkit-transform: rotate(0deg);    
-    }
-    100%{
-       -webkit-transform: rotate(360deg); 
-    }
-    
-    }
+}
     

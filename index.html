@@ -1,66 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <title>retro-nostalgia</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link
+rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+<link rel="shorcut icon" href="image/kindpng_3965485.png">
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&display=swap" rel="stylesheet">
+<!--font-family: 'Londrina Solid', cursive;-->
+<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+<!--font-family: 'Alata', sans-serif;-->
+<title>game-over</title>
 </head>
-<body>
-<div class="background">
-    <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
-      <img src="image/hongo.png" class="navbar-brand">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav" >
-          <ul class="navbar-nav  ">
-            <li class="nav-item active">
-              <a class="nav-link" href="/nintendo.html">Nintendo <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Super Nintendo</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sega</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Gameboy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-<div class="container ">
-<div class="logo">
-<div class="row d-flex self-items-center justify-content-center">
+<body id="bg" >
+
+<header class="header">
+<div class="banner">
+<img src="image/Daco_2008543.png">
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-dark" id="menu">
+<img src="image/hongo.png" class="navbar-brand">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ">
+<li class="nav-item ">
+<a class="nav-link active" href="index.html">HOME <span class="sr-only">(current)</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link active" href="nintendoo.html">NINTENDO</a>
+</li>
+<li class="nav-item">
+<a class="nav-link active" href="nintendo.html">SUPER NINTENDO</a>
+</li>
+<li class="nav-item">
+<a class="nav-link active" href="#">SEGA</a>
+</li>
+<li class="nav-item">
+<a class="nav-link active" href="#">GAME BOY</a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<div class="container-fluid">
+<div class="aside">
+<aside>
+<h4 class=" text-center">Esto te puede interesar:</h4>
+<ul>
+<li><a href="https://www.fib.upc.edu/retro-informatica/historia/videojocs.html#:~:text=1970%2D1979%3A%20La%20eclosi%C3%B3n%20de%20los%20videojuegos&text=El%20sistema%20fue%20dise%C3%B1ado%20por,angular%20del%20videojuego%20como%20industria.&text=Aparecieron%20en%20los%20salones%20recreativos,)%20o%20Asteroids%20(Atari).">historia de los videojuegos</a></li>
+<li><a href="https://revistamorcego.com/es/nintendo-vs-sega-a-guerra-de-consolas-que-mudou-a-industria">Sega vs Nintendo.</a></li>
+<li><a href="https://malditosnerds.com/playstation/el-nacimiento-sony-playstation-como-nintendo-creo-su-competencia-n14714">Nintendo traiciona a Sony.</a></li>
+<li><a href="https://www.lahora.com.ec/noticia/1102290837/playstation-la-revolucion-de-las-consolas">La revolucion de Playstation.</a></li>
+<li><a href="https://culturageek.com.ar/consolas-condenadas-sega-dreamcast/">El final digno de Sega.</a></li>
+<li><a href="https://www.google.com/search?rlz=1C1GKLC_enAR887AR887&sxsrf=ALeKk00SuP8mHhbno6XLX1cAk4aSrZaS-w%3A1598559624485&ei=iBVIX7SYHbOd5OUPnJebkA8&q=el+exito+de+gameboy&oq=el+exito+de+gameboy&gs_lcp=CgZwc3ktYWIQAzIFCCEQoAE6BwgjEOoCECc6BwguEOoCECc6BAgjECc6BAgAEEM6BQgAELEDOggIABCxAxCDAToCCC46BwgAELEDEEM6BQguELEDOgIIADoKCC4QsQMQQxCTAjoFCC4QkwI6AggmOgYIABAWEB46BwghEAoQoAE6BAghEApQm1hY1nxgg4ABaAFwAHgAgAGXAYgBsRGSAQQzLjE2mAEAoAEBqgEHZ3dzLXdperABCsABAQ&sclient=psy-ab&ved=0ahUKEwi0_MbUmrzrAhWzDrkGHZzLBvIQ4dUDCA0&uact=5">El exito de gameboy.</a></li>
+<li><a href="https://codigoespagueti.com/noticias/xbox-historia/">El inicio de xbox.</a></li>
+</ul>
+</aside>
+</div>
+</div>
+
+<div class="container " >
+<div class="history text-secondary top-game" id="hs">
+<button id="luz"><img id="foco" src="prendido.png"></button>
+<div class="row">
 <div class="col-12">
-<img src="image/tumblr_mjgv8keumg1s87n79o1_400_by_pokemon_gamer_kay-d7vjdnv.gif">
-</div>
-<div class="col-12">
-<img src="image/Daco_2008543.png" id="logo">
+<h1 class="display-4 text-secondary animate__backInRight">El comienzo de los videojuegos.</h1>
 </div>
 </div>
-</div>
-<div class="row justify-content-center info ">
-<div class="col-12">
-<p class="text-center " id="texto">
-Este lugar cumple la funcion para descargar juegos retros para android y windows,en el menu tendran el nombre de cada consola para descargar los juegos juntos los emuladores y estara ka informacion para poder instalarlos.
-</p>
-</div>
-<div class="col-12">
-<img src="image/pngocean.com (1).png" id="luz">
+
+<div class="redes">
+<div class="col-12"><p>compartir:</p>
+<div class="row ">
+<div class="col-3 col-md-1"><img src="image/redes/Facebook_icon-icons.com_66805.png"><p>Facebook</p></div>
+<div class="col-2 col-md-1" ><img src="image/redes/Twitter_icon-icons.com_66803.png"><p>Twitter</p></div>
+<div class="col-1 col-md-1"><img src="image/redes/Instagram_icon-icons.com_66804.png"><p>Instagram</p></div>
 </div>
 </div>
 </div>
 <div class="row">
-<header><p>&copy; 2020-facundo loto</p></header>
+<div class="col-12"><img src="image/index/nintendo-consolas-retro.jpg"alt="consolas"> </div>
 </div>
+<p>
+En 1972, con el lanzamiento de la Magnavox Odyssey,tienen inicio la primera generación de consolas
+de videojuegos orientados para el uso doméstico.Desde aquel momento,ya son ocho generaciones 
+de consolas que cubrieron un período de 45 años, donde se destacan muchas anécdotas e historias. 
+ <br>
+ <br>
+ Entre crisis y evoluciones, cada una de estas generaciones de consolas tiene ganadores y 
+ perdedores, y en este lugar descubrirás cosas que no sabías de cada consola de viodejuegos.
+</p>
+
+<div class="row">
+<div class="col-12"><h2 class="text-left chapter">Primera generación de videojuegos</h2></div>
+<div class="col-12"><img src="image/index/magnavox-odyssey-system.png" alt=""></div>
 </div>
+<p >
+    Las primeras consolas que salieron al mercado eran máquinas muy simples y rudimentarias.
+    <br>
+    <br>
+     Gran parte de estas se limitaba a adaptar el juego Pong para los televisores domésticos,
+    En esa infancia del videojuego doméstico, los grandes destacados fueron el propio Magnavox 
+    Odyssey, que sumó 330 mil unidades vendidas en los Estados Unidos, y el Nintendo Color TV Game,
+    con más de tres millones de aparatos vendidos.
+    <br>
+    <br>
+    Los números pueden parecer un poco modestos, pero vale la pena recordar que estas videoconsolas 
+    inauguraron un mercado que no existía y, en algunos casos, no eran nada baratas: Odyssey se vendía 
+    por US$ 100 en 1972, valor que si se traduce a los niveles actuales sería alrededor de US$ 550.
+    </p>
+
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jLGBtkKPj2U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="row">
+<div class="col-12"><h2 class="text-left chapter">Segunda generación de videojuegos</h2></div>
+<div class="col-12"><img src="image/index/consola-atari-2600-D_NQ_NP_639501-MPE25563962177_052017-F.jpg" alt=""></div>
+</div>
+<p >
+    En esta era, las consolas de videojuegos empiezan a ganar las características de lo que conocemos 
+    hoy como funciones básicas. El uso de los cartuchos de juegos, que permiten el acceso a varios títulos diferentes en una misma consola, se vuelven muy populares 
+    en contraste con las consolas con las que solo se podía jugar a Pong, de la generación anterior.
+    <br>
+    <br>
+    La empresa que mejor capitalizó este nuevo formato fue la primera Atari, lanzada en 1977, 
+    y que se convertiría en el primer gran éxito de la industria, recogiendo 30 millones de unidades
+    vendidas. La consola destruyó a la competencia, ya que ofrecía gráficos superiores y, en virtud 
+    del hardware más evolucionado, daba a los desarrolladores más libertad para crear juegos más 
+    innovadores.
+    <br>
+    <br>
+    Pero el gran acierto detrás del enorme éxito de Atari en el final de la década de 1970 y 
+    durante la primera mitad de los años 1980 era el hecho de que la empresa poseía derechos de
+    exclusividad en la adaptación de los juegos arcade del momento, que atraían a multitudes a 
+    las salas de juegos en todo el mundo.
+    <br>
+    <br>
+    De esta manera, se podía jugar a Frog, Pac-Man o Space Invaders desde la comodidad del hogar,
+    con lo que la Atari 2600 estaba en ventaja en relación a todo lo que la competencia ofrecía.
+    </p>
+
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/s6RxENG9HAU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="row">
+<div class="col-12"><h2 class="text-left chapter">Tercera generación de videojuegos</h2></div>
+<div class="col-12"><img src="image/index/nes.jpg" alt=""></div>
+</div>
+<p>
+    Esta fase en la historia de los videojuegos comenzó en 1983, 
+    cuando Nintendo presentó su consola NES. También conocida como generación de 8 bits, 
+    este período vio el primer capítulo de la guerra entre Nintendo y Sega y el surgimiento 
+    de algunas leyendas que resisten hasta el día de hoy, como Super Mario, Sonic, Donkey Kong, 
+    Zelda y Mega Man.
+    <br>
+    <br>
+    Nintendo ha sumado un total de 62 millones de ventas en todo el mundo, frente a los 14,8 millones 
+    de la segunda en ventas, la consola Master System. Los principales motivos que dieron la victoria 
+    a Nintendo fueron la creación de una biblioteca de títulos propios de gran atractivo, además de 
+    un programa de licencia de los juegos bastante restrictivo a los competidores.
+    </p>
+
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YJ_FSWAG_AU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="row">
+<div class="col-12"><h2 class="text-left chapter">Cuarta generación de videojuego(sega vs nintendo)</h2></div>
+<div class="col-12"><img src="image/index/maxresdefault.jpg" alt=""></div>
+</div>
+<p >
+    Mega Drive y Super Nintendo fueron lanzadas en 1988 y 1990, respectivamente, y protagonizaron 
+    un nuevo capítulo en la historia de los videojuegos. En este segundo round, aunque la lucha ha
+    sido más igual, el ganador fue, de nuevo, una consola de Nintendo.
+    <br>
+    <br>
+    La victoria de SNES es explicada por el hecho de que la consola tenía capacidad gráfica y 
+    de audio un poco superior a la que tenía Mega Drive. Otro motivo señalado fue el éxito de los 
+    juegos desarrollados por la propia Nintendo con el fin de cautivar a un público más infantil. 
+    La consola Super Nintendo cosechó los frutos plantados por su predecesora para salir victoriosa 
+    con un total de 49 millones de unidades vendidas en el mundo. Mega Drive obtuvo el segundo lugar 
+    con 40 millones de consolas.
+    </p>
+
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bPCDmlnA2L8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="row">
+<div class="col-12"><h2 class="text-left chapter">Quinta generación de videojuegos(sony vs nintendo)</h2></div>
+<div class="col-12"><img src="image/index/n6vsps1.jpg" alt=""></div>
+</div>
+<p>
+    La generación liderada por la primera PlayStation marcó la popularización del formato de CDs, 
+    la llegada de los juegos con mundos en tres dimensiones en las consolas y el aumento de la 
+    calidad de los gráficos permitido por chips de PSOne y Nintendo 64 que reproducían más 
+    de 16 millones de colores.
+    <br>
+    <br>
+    Aquí la ganadora fue PlayStation. Lanzada en 1994, la primera consola de Sony ganó amplia
+    ventaja sobre la Sega Saturn por ser más amigable con el desarrollo de juegos en tres dimensiones.
+    En la disputa contra la N64, el triunfo de la PSOne era el uso de CDs, que eran más baratos que
+    los cartuchos y el hecho de haber llegado al mercado mucho antes (N64 sería lanzada en 1996).
+    A fin de cuentas, ganó la PlayStation con 102 millones de unidades vendidas. Nintendo 64, en 
+    segundo lugar, quedó bien atrás, con 32,9 millones de consolas vendidas en todo el mundo.
+    </p>
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/M9ztLZJhCaQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<div class="row">
+<div class="col-12"><h2 class="text-left chapter">Sexta generación de videojuegos(sony vs microsoft)</h2></div>
+<div class="col-12"><img src="image/index/ps2vsxbox.jpg" alt=""></div>
+</div>
+<p>
+    La generación que fue inaugurada por la consola Dreamcast acabó teniendo como ganadora
+    absoluta a la PlayStation 2 con unas abrumadoras 153 millones de unidades comercializadas,
+    superando a Xbox, que llegó a vender 24 millones.
+    <br>
+    <br>
+    El punto interesante de esta generación y que sería, en cierta medida, repetido en la siguiente, 
+    es que la PlayStation 2 alcanza todo el éxito, incluso siendo técnicamente inferior a la Xbox e
+    incluso a la GameCube. Sin embargo, el sistema de Sony era más fácil de desarrollar, 
+    ofrecía compatibilidad con la enorme biblioteca de títulos de PSOne, reproducía DVDs y, 
+    para mucha gente que ya tenía una PlayStation, fue un upgrade natural.
+    En la carrera de la sexta generación, Sony salió victoriosa por haber ganado de forma 
+    abrumadora a la anterior.
+    </p>
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1Qsb7s_knsQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="row">
+<div class="col-12"><h2 class="text-left chapter">Septima generación de videojuegos(sony vs microsoft vs nintendo)</h2></div>
+<div class="col-12"><img src="image/index/wii.jpg" alt=""></div>
+</div>
+<p >
+    Ni PS3 ni Xbox 360. La consola más exitosa de la séptima generación es la Nintendo Wii. 
+    Hasta enero de 2016, el producto de Nintendo contaba con 101 millones de unidades comercializadas 
+    en el mundo contra las 84 millones de ventas de Xbox 360 y 80 millones de PlayStation 3.
+    <br>
+    <br>
+    La Wii capitalizó todo este éxito a través de la novedad de los controles por movimiento,
+    atrayendo a una gran masa de consumidores que no eran necesariamente los jugadores.
+    <br>
+    <br>
+    De esta forma, la Wii se convirtió en parte de la vida de las personas que no requerían gráficos de última generación y que no se interesaban por jugar con los grandes lanzamientos disponibles en los rivales. 
+    Además, contando con las series de juegos exclusivos de Nintendo, la Wii mantuvo su fiel base de consumidores de la consola japonesa con una serie de juegos derivados de Mario y otras franquicias de éxito.
+    </p>
+
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1Qsb7s_knsQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="row">
+<div class="col-12"><h2 class="text-left chapter">Octava generación de videojuegos(sony vs microsoft vs nintendo)</h2></div>
+<div class="col-12"><img src="image/index/ps4vsxbox.jfif" alt=""></div>
+</div>
+<p>
+    En esta generación podemos encontrar a la Wii U, la PlayStation 4,
+    la Xbox One y la Nintendo Switch. Lo que se destaca en estas consolas es
+    el comienzo del uso de internet como eje principal, pudiendo además ver películas, 
+    series de TV y diversos contenidos que ofrece cada compañía.
+    <br>
+    <br>
+    PlayStation 4 es la consola que se impuso sobre el resto, logrando 19 millones de ventas, 
+    seguida por la Xbox One, con 11 millones.
+    </p>
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8u5PQ9YuhIY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
+</div> 
+
+<div class="compartir" id="compartir"> 
+<p class=" text-left text-secondary"><b>Si te gusto,puedes compartirlo con tus amigos.</b></p>
+ <div class="row">
+ <div class="col-2"><img src="image/redes/Facebook-share-icon.png"></div>
+ <div class="col-2"><img src="image/redes/twitterimg.png"></div>
+ </div>
+</div>
+  <footer id="footer"><span >&copy;GAME-OVER es creado por facundo loto.</span></footer>
+ <!--<div class="row" >
+ <div class="col-6 text-center"></div>
+
+</div>-->
+
 <script src="animation.js"></script>
 <script src="jquery-3.5.1.min.js"></script>
 <script src="popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>  
+<script src="js/bootstrap.min.js"></script>
+
 </body>
 </html>

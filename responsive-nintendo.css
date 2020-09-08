@@ -1,39 +1,184 @@
-@media (min-width:320px)and (max-width:568px){
-.carousel-inner img{
-    margin:0 auto;
-    min-height:300px;
-    min-width:300px;
-  }
-  .descargar button{
-    position: relative;
-    top:2em;
-    margin-left:5px;
-  }
-  .descargar{
-  position: relative;
-  top:30em;
-  }
-  nav a{
-    margin-left:4px;
-    font-size:1em;
+@media (min-width:300px)and (max-width:568px){
+
+  #luz{
+    border:none;
+    position:fixed;
+    bottom:10px;
+    right:20px;
     }
-    .info img{
-        position: relative;
-        top:4em;
-        }
-        #nes{
-         position: relative;
-         top:-2em;
-         width:200px;
-         height:200px;
-        }
-        .container p{  
-            width:300px;
-            height:100px;
-            font-size:12px;
-            }
-            .logo img{
-            max-width:150px;
-            max-height:150px;
-            }
+    #luz img{
+      width:35px;
+      height:35px;
     }
+
+
+ .banner img{
+  max-width:100px;
+  max-height:128px;
+ }
+ .navbar{
+ 
+  max-width:100%;
+  
+ }
+
+
+.top-game h2{
+font-size:1.3em;
+}
+.top-game h4{
+
+font-size:1.1em;
+
+}
+.container{
+
+}
+
+  .compartir img{
+    width:50px;
+    height:50px;
+    
+  }
+  .carousel-item img{
+    min-height:200px;
+    min-width:200px;
+  }
+
+  
+  .download p{
+  margin-top:2em;
+  font-size:1em;
+  }
+  .download img{
+  width:100px;
+  height:100px;
+  
+  animation-name:  headShake ;
+animation-duration:2s;
+animation-iteration-count: infinite;
+  }
+
+    }
+    @-webkit-keyframes rubberBand {
+      from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+      }
+    
+      30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+      }
+    
+      40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+      }
+    
+      50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+      }
+    
+      65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+      }
+    
+      75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+      }
+    
+      to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+      }
+    }
+    @-webkit-keyframes headShake {
+      0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
+    
+      6.5% {
+        -webkit-transform: translateX(-6px) rotateY(-9deg);
+        transform: translateX(-6px) rotateY(-9deg);
+      }
+    
+      18.5% {
+        -webkit-transform: translateX(5px) rotateY(7deg);
+        transform: translateX(5px) rotateY(7deg);
+      }
+    
+      31.5% {
+        -webkit-transform: translateX(-3px) rotateY(-5deg);
+        transform: translateX(-3px) rotateY(-5deg);
+      }
+    
+      43.5% {
+        -webkit-transform: translateX(2px) rotateY(3deg);
+        transform: translateX(2px) rotateY(3deg);
+      }
+    
+      50% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
+    }
+   /*@media (max-width:320px){
+      .logo{
+      position:relative;
+      top:4em;
+      }
+      .logo img{
+        display:block;
+        margin:0 auto;
+        max-width:150px;
+        max-height:150px;
+        }
+        #scroll{
+          animation-name:slideDown;
+          animation-duration:2s;
+          animation-iteration-count: infinite;
+          position: relative;
+          top:2em;
+          }
+        
+          .info img{
+            margin:0 auto;
+            width:50vw;
+            height:200px;
+            position: relative;
+            right:1em;
+            }
+            .top-game{
+        
+              width:80vw;
+              position: relative;
+              left:10vw;
+              
+              }
+            .top-game img{
+            margin-bottom:40px;
+            margin-top:40px;
+            max-width:60vw;
+            max-height:200px;
+            position: relative;
+            left:2em;
+            }
+            .download {
+              width:60vw;
+             
+            }
+        
+            .download img{
+              width:50px;
+              height:50px;
+              }
+    }
+    */
+    
+
+      
